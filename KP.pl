@@ -1,6 +1,3 @@
-% Автор:
-% Дата: 04.12.2016
-
 parent('Aleksandra Pustovalova', 'Andrej Pustovalov', 'Irina Serebryakova').
 parent('Nikita Pustovalov', 'Andrej Pustovalov', 'Irina Serebryakova').
 parent('Aleksej Serebryakov', 'Georgij Serebryakov', 'Anna Kudryavceva').
@@ -68,8 +65,6 @@ path_dfs([Y|T], Y, [Y|T]).
 path_dfs(P, Y, R):- prolong(P, P1), path_dfs(P1, Y, R).
 
 relative(A, B, R):- dfs(A, B, R1), list(R1, R).
-
-
 
 relatives('mother', mother).
 relatives('father', father).
